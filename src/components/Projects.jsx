@@ -7,7 +7,8 @@ export default function Projects({ isDark }) {
       title: 'VahanWire AMC Website & Admin Panel',
       desc: 'Built responsive frontend for AMC website and admin management panel. Integrated REST APIs for seamless data handling and optimized UI performance across browsers.',
       tags: ['React.js', 'Tailwind CSS', 'REST API'],
-      image: 'bg-gradient-to-br from-blue-100 to-cyan-100',
+      image: 'bg-gradient-to-br from-blue-400 to-cyan-500',
+      icon: '🚗',
       github: 'https://github.com/Divya9720',
       live: 'https://vahanwire.com/'
     },
@@ -16,16 +17,18 @@ export default function Projects({ isDark }) {
       title: 'Amazon Clone',
       desc: 'Created a fully responsive e-commerce UI replicating Amazon\'s design. Implemented responsive layouts and modern UI patterns using HTML, CSS, and Bootstrap.',
       tags: ['HTML', 'CSS', 'Bootstrap'],
-      image: 'bg-gradient-to-br from-yellow-100 to-orange-100',
+      image: 'bg-gradient-to-br from-yellow-400 to-orange-500',
+      icon: '🛍️',
       github: 'https://github.com/Divya9720',
-      live: '#'
+      live: 'https://amazonwebclone-nine.vercel.app/index.html'
     },
     {
       id: 3,
       title: 'Malware Detection System',
       desc: 'ML-based system for detecting malware using Random Forest algorithm. Backend built with Django, SQLite database. Contributed to the frontend visualization components.',
       tags: ['Django', 'Python', 'Machine Learning'],
-      image: 'bg-gradient-to-br from-red-100 to-pink-100',
+      image: 'bg-gradient-to-br from-red-400 to-pink-500',
+      icon: '🔒',
       github: 'https://github.com/Divya9720',
       live: '#'
     }
@@ -49,14 +52,12 @@ export default function Projects({ isDark }) {
             data-aos="fade-up"
             data-aos-delay={idx * 100}
           >
-            <div className={`${project.image} h-48 group-hover:scale-110 transition relative overflow-hidden`}>
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition duration-300"></div>
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+            <div className={`${project.image} h-48 group-hover:scale-110 transition relative overflow-hidden flex items-center justify-center`}>
+              <div className="text-6xl group-hover:scale-150 transition duration-300">{project.icon}</div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-60 transition duration-300"></div>
+              <div className="absolute inset-0 flex items-end justify-center pb-4 opacity-0 group-hover:opacity-100 transition duration-300">
                 <div className="text-center">
-                  <p className="text-white font-bold text-lg mb-3">View Project</p>
-                  <div className="flex gap-3 justify-center">
-                    <span className="text-white text-2xl">👁️</span>
-                  </div>
+                  <p className="text-white font-bold text-lg">View Project</p>
                 </div>
               </div>
             </div>

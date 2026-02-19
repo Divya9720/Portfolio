@@ -36,24 +36,24 @@ export default function Testimonials({ isDark }) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {testimonials.map((testi, i) => (
           <div
-            key={i}
-            className={`rounded-2xl p-8 shadow-sm border hover:shadow-xl transition hover:-translate-y-1 ${
-              isDark
-                ? 'bg-gray-900 border-gray-700 hover:border-gray-600'
-                : 'bg-white border-purple-100 hover:border-purple-300'
-            }`}
-            data-aos="fade-up"
-            data-aos-delay={i * 100}
-          >
+             key={i}
+             className={`rounded-2xl p-8 shadow-sm border hover:shadow-2xl transition hover:-translate-y-2 group cursor-pointer ${
+               isDark
+                 ? 'bg-gray-900 border-gray-700 hover:border-purple-600'
+                 : 'bg-white border-purple-100 hover:border-purple-400'
+             }`}
+             data-aos="fade-up"
+             data-aos-delay={i * 100}
+           >
             <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full flex items-center justify-center text-4xl">
-                {testi.image}
-              </div>
-              <div className="ml-4">
-                <p className={`font-bold ${isDark ? 'text-white' : 'text-gray-800'}`}>{testi.name}</p>
-                <p className="text-purple-600 text-sm font-medium">{testi.role}</p>
-              </div>
-            </div>
+               <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-4xl group-hover:scale-110 transition shadow-lg">
+                 {testi.image}
+               </div>
+               <div className="ml-4">
+                 <p className={`font-bold ${isDark ? 'text-white' : 'text-gray-800'}`}>{testi.name}</p>
+                 <p className="text-purple-600 text-sm font-medium">{testi.role}</p>
+               </div>
+             </div>
             <p className={`leading-relaxed italic ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>"{testi.text}"</p>
             <div className="mt-4 flex gap-1">
               {[...Array(5)].map((_, i) => (

@@ -27,10 +27,9 @@ export default function Navbar({ isDark, setIsDark }) {
             {isDark ? '☀️' : '🌙'}
           </button>
           <a 
-            href="https://github.com/Divya9720/resume" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hidden sm:block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 sm:px-6 py-2 rounded-full text-sm sm:text-base font-medium hover:shadow-lg transition"
+            href="/files/Resume.pdf" 
+            download="Divya_Chauhan_Resume.pdf"
+            className="hidden sm:block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 sm:px-6 py-2 rounded-full text-sm sm:text-base font-medium hover:shadow-lg transition hover:scale-105 duration-200"
           >
             CV
           </a>

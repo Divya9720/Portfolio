@@ -47,10 +47,10 @@ export default function Skills({ isDark }) {
             <h4 className="text-lg sm:text-2xl font-bold text-purple-600 mb-4 sm:mb-6">{cat.category}</h4>
             <div className="flex flex-wrap gap-2 sm:gap-3">
               {cat.skills.map((skill, i) => (
-                <span key={i} className="bg-gradient-to-r from-purple-100 to-pink-100 text-gray-800 px-5 py-2 rounded-full font-medium hover:shadow-md transition cursor-default border border-purple-200">
-                  {skill}
-                </span>
-              ))}
+                 <span key={i} className="bg-gradient-to-r from-purple-100 to-pink-100 text-gray-800 px-5 py-2 rounded-full font-medium hover:shadow-lg hover:scale-110 transition cursor-default border border-purple-200 hover:from-purple-200 hover:to-pink-200">
+                   {skill}
+                 </span>
+               ))}
             </div>
           </div>
         ))}

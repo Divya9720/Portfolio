@@ -85,27 +85,27 @@ export default function Contact({ isDark }) {
             <h4 className={`text-xl sm:text-2xl font-bold mb-4 sm:mb-8 ${isDark ? 'text-white' : 'text-gray-800'}`}>Get In Touch</h4>
             <div className="space-y-4 sm:space-y-6">
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">📧</span>
-                </div>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center flex-shrink-0 hover:scale-110 transition shadow-md">
+                    <span className="text-2xl">📧</span>
+                  </div>
                 <div>
                   <p className={`font-semibold ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>Email</p>
                   <p className={isDark ? 'text-gray-400' : 'text-gray-600'}>divichauhan0808@gmail.com</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">📱</span>
-                </div>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center flex-shrink-0 hover:scale-110 transition shadow-md">
+                    <span className="text-2xl">📱</span>
+                  </div>
                 <div>
                   <p className={`font-semibold ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>Phone</p>
                   <p className={isDark ? 'text-gray-400' : 'text-gray-600'}>+91-9720682682</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl">📍</span>
-                </div>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center flex-shrink-0 hover:scale-110 transition shadow-md">
+                    <span className="text-2xl">📍</span>
+                  </div>
                 <div>
                   <p className={`font-semibold ${isDark ? 'text-gray-200' : 'text-gray-800'}`}>Location</p>
                   <p className={isDark ? 'text-gray-400' : 'text-gray-600'}>Pilkhuwa (Hapur), Uttar Pradesh</p>
@@ -121,7 +121,7 @@ export default function Contact({ isDark }) {
                 href="https://linkedin.com/in/divyachauhan2001"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center hover:shadow-lg transition hover:scale-110"
+                className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center hover:shadow-xl transition hover:scale-125 hover:-translate-y-1"
                 title="LinkedIn"
               >
                 <span className="text-xl">💼</span>
@@ -130,14 +130,14 @@ export default function Contact({ isDark }) {
                 href="https://github.com/Divya9720"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center hover:shadow-lg transition hover:scale-110"
+                className="w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg flex items-center justify-center hover:shadow-xl transition hover:scale-125 hover:-translate-y-1"
                 title="GitHub"
               >
                 <span className="text-xl">💻</span>
               </a>
               <a
                 href="mailto:divichauhan0808@gmail.com"
-                className="w-12 h-12 bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg flex items-center justify-center hover:shadow-lg transition hover:scale-110"
+                className="w-12 h-12 bg-gradient-to-br from-red-400 to-pink-600 rounded-lg flex items-center justify-center hover:shadow-xl transition hover:scale-125 hover:-translate-y-1"
                 title="Email"
               >
                 <span className="text-xl">✉️</span>

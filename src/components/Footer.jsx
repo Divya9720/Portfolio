@@ -14,10 +14,10 @@ export default function Footer({ isDark }) {
           <div>
             <h4 className={`font-semibold mb-3 sm:mb-4 text-sm sm:text-base ${isDark ? 'text-white' : 'text-gray-900'}`}>Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className={`text-xs sm:text-sm transition ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Home</a></li>
-              <li><a href="#projects" className={`text-xs sm:text-sm transition ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Projects</a></li>
-              <li><a href="#skills" className={`text-xs sm:text-sm transition ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Skills</a></li>
-              <li><a href="#contact" className={`text-xs sm:text-sm transition ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Contact</a></li>
+              <li><a href="#home" className={`text-xs sm:text-sm transition hover:scale-105 inline-block ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Home</a></li>
+              <li><a href="#projects" className={`text-xs sm:text-sm transition hover:scale-105 inline-block ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Projects</a></li>
+              <li><a href="#skills" className={`text-xs sm:text-sm transition hover:scale-105 inline-block ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Skills</a></li>
+              <li><a href="#contact" className={`text-xs sm:text-sm transition hover:scale-105 inline-block ${isDark ? 'text-gray-400 hover:text-purple-400' : 'text-gray-700 hover:text-purple-600'}`}>Contact</a></li>
             </ul>
           </div>
           <div>

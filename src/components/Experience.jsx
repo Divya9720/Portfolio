@@ -60,7 +60,7 @@ export default function Experience({ isDark }) {
                   <span className="text-purple-600 font-semibold text-xs sm:text-sm">{exp.duration}</span>
                 </div>
                 <p className="text-purple-600 font-medium mb-3">{exp.company}</p>
-                <p className={isDark ? 'text-gray-300' : 'text-gray-600'} leading-relaxed>{exp.desc}</p>
+                <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>{exp.desc}</p>
               </div>
             ))}
           </div>
@@ -80,7 +80,7 @@ export default function Experience({ isDark }) {
               >
                 <h5 className={`text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-800'}`}>{edu.degree}</h5>
                 <p className="text-pink-600 font-medium mb-2">{edu.school}</p>
-                <p className={isDark ? 'text-gray-300' : 'text-gray-600'} font-semibold>{edu.year}</p>
+                <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>{edu.year}</p>
               </div>
             ))}
           </div>
