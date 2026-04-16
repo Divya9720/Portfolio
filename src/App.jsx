@@ -7,7 +7,7 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
-import Testimonials from './components/Testimonials'
+
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import FloatingShapes from './components/FloatingShapes'
@@ -35,7 +35,7 @@ function App() {
       <Projects isDark={isDark} />
       <Skills isDark={isDark} />
       <Experience isDark={isDark} />
-      <Testimonials isDark={isDark} />
+
       <Contact isDark={isDark} />
       <Footer isDark={isDark} />
     </div>

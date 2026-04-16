@@ -6,19 +6,22 @@ export default function Experience({ isDark }) {
       role: 'Junior Frontend Developer',
       company: 'VahanWire Pvt. Ltd., Noida',
       duration: 'Jan 2025 – Present',
-      desc: 'Developed responsive websites using React.js and Tailwind CSS based on Figma designs. Integrated REST APIs for seamless data flow and improved UI performance across browsers.'
+      desc: 'Developed responsive websites using React.js and Tailwind CSS based on Figma designs. Integrated REST APIs for seamless data flow and improved UI performance across browsers.',
+      certLink: '' // Add your certificate link here
     },
     {
       role: 'Frontend Developer Intern',
       company: 'VahanWire Pvt. Ltd., Noida',
       duration: 'Oct 2024 – Dec 2024',
-      desc: 'Built responsive components using React.js, HTML, CSS, and JavaScript. Collaborated with senior developers to enhance UI/UX and optimize layouts.'
+      desc: 'Built responsive components using React.js, HTML, CSS, and JavaScript. Collaborated with senior developers to enhance UI/UX and optimize layouts.',
+      certLink: '' // Add your certificate link here
     },
     {
       role: 'Web Developer Intern',
       company: 'Zeabros Pvt. Ltd., Gurgaon',
       duration: 'Jul 2024 – Sep 2024',
-      desc: 'Developed responsive web pages using HTML, CSS, JavaScript, and Bootstrap. Assisted in UI optimization and layout improvements.'
+      desc: 'Developed responsive web pages using HTML, CSS, JavaScript, and Bootstrap. Assisted in UI optimization and layout improvements.',
+      certLink: '' // Add your certificate link here
     }
   ]
 
@@ -26,14 +29,45 @@ export default function Experience({ isDark }) {
     {
       degree: 'B.Tech in Computer Science & Engineering',
       school: 'Sunder Deep Engineering College, AKTU',
-      year: '2022 – 2025 | CGPA: 7.8'
+      year: '2022 – 2025 | CGPA: 7.8',
+      image: '' // Add your degree certificate image URL here
     },
     {
       degree: 'Diploma in Computer Science & Engineering',
       school: 'KM Mayawati Govt. Girls Polytechnic',
-      year: '2019 – 2022 | Score: 78.55%'
+      year: '2019 – 2022 | Score: 78.55%',
+      image: '' // Add your diploma certificate image URL here
     }
   ]
+
+  const certifications = [
+    {
+      name: 'Python Programming',
+      issuer: 'CETPA - 2021',
+      link: '',
+      image: '' // Add your certificate image URL here
+    },
+    {
+      name: 'UI/UX Design',
+      issuer: 'Infosys - 2024',
+      link: '',
+      image: '' // Add your certificate image URL here
+    },
+    {
+      name: 'Introduction to Frontend Development',
+      issuer: 'Great Learning - 2024',
+      link: '',
+      image: '' // Add your certificate image URL here
+    },
+    {
+      name: 'Salesforce Training',
+      issuer: 'Honeywell - 2025',
+      link: '',
+      image: '' // Add your certificate image URL here
+    }
+  ]
+
+  const [selectedImage, setSelectedImage] = React.useState(null)
 
   return (
     <section id="experience" className={`max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 ${isDark ? 'text-white' : ''}`}>
@@ -80,7 +114,15 @@ export default function Experience({ isDark }) {
               >
                 <h5 className={`text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-800'}`}>{edu.degree}</h5>
                 <p className="text-pink-600 font-medium mb-2">{edu.school}</p>
-                <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>{edu.year}</p>
+                <p className={`${isDark ? 'text-gray-300' : 'text-gray-600'} font-semibold mb-3`}>{edu.year}</p>
+                {edu.image && (
+                  <button 
+                    onClick={() => setSelectedImage(edu.image)}
+                    className="text-pink-600 hover:text-pink-800 text-sm font-medium"
+                  >
+                    📄 View Certificate
+                  </button>
+                )}
               </div>
             ))}
           </div>
@@ -88,26 +130,53 @@ export default function Experience({ isDark }) {
           <div className="mt-6 sm:mt-8">
             <h4 className={`text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 ${isDark ? 'text-white' : 'text-gray-800'}`}>Certifications</h4>
             <div className="space-y-3">
-              <div className={`rounded-lg p-4 shadow-sm border-l-4 border-indigo-500 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
-                <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-800'}`}>Python Programming</p>
-                <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>CETPA - 2021</p>
-              </div>
-              <div className={`rounded-lg p-4 shadow-sm border-l-4 border-indigo-500 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
-                <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-800'}`}>UI/UX Design</p>
-                <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Infosys - 2024</p>
-              </div>
-              <div className={`rounded-lg p-4 shadow-sm border-l-4 border-indigo-500 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
-                <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-800'}`}>Introduction to Frontend Development</p>
-                <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Great Learning - 2024</p>
-              </div>
-              <div className={`rounded-lg p-4 shadow-sm border-l-4 border-indigo-500 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
-                <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-800'}`}>Salesforce Training</p>
-                <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Honeywell - 2025</p>
-              </div>
+              {certifications.map((cert, i) => (
+                <div key={i} className={`rounded-lg p-4 shadow-sm border-l-4 border-indigo-500 ${isDark ? 'bg-gray-800' : 'bg-white'}`}>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <p className={`font-semibold ${isDark ? 'text-white' : 'text-gray-800'}`}>{cert.name}</p>
+                      <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'} mb-2`}>{cert.issuer}</p>
+                      <div className="flex gap-2">
+                        {cert.image && (
+                          <button 
+                            onClick={() => setSelectedImage(cert.image)}
+                            className="text-indigo-600 hover:text-indigo-800 text-xs font-medium"
+                          >
+                            📄 View
+                          </button>
+                        )}
+                        {cert.link && <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 text-xs font-medium">🔗 Link</a>}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-2xl w-full max-h-[90vh]" onClick={e => e.stopPropagation()}>
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute -top-10 right-0 text-white text-2xl font-bold hover:text-gray-300"
+            >
+              ✕
+            </button>
+            <img 
+              src={selectedImage} 
+              alt="Certificate" 
+              className="w-full h-auto rounded-lg shadow-2xl object-contain"
+            />
+          </div>
+        </div>
+      )}
     </section>
   )
 }

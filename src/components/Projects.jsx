@@ -12,8 +12,18 @@ export default function Projects({ isDark }) {
       github: 'https://github.com/Divya9720',
       live: 'https://vahanwire.com/'
     },
-    {
+     {
       id: 2,
+      title: 'Electrom Communications',
+      desc: 'Professional communications company website. Responsive design with modern UI/UX showcasing services and business solutions. Built with clean, maintainable code.',
+      tags: ['React.js', 'Tailwind CSS', 'Responsive Design'],
+      image: 'bg-gradient-to-br from-green-400 to-blue-500',
+      icon: '📡',
+      github: 'https://github.com/Divya9720',
+      live: 'https://electromcommunications.com/'
+    },
+    {
+      id: 3,
       title: 'Amazon Clone',
       desc: 'Created a fully responsive e-commerce UI replicating Amazon\'s design. Implemented responsive layouts and modern UI patterns using HTML, CSS, and Bootstrap.',
       tags: ['HTML', 'CSS', 'Bootstrap'],
@@ -23,7 +33,7 @@ export default function Projects({ isDark }) {
       live: 'https://amazonwebclone-nine.vercel.app/index.html'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Malware Detection System',
       desc: 'ML-based system for detecting malware using Random Forest algorithm. Backend built with Django, SQLite database. Contributed to the frontend visualization components.',
       tags: ['Django', 'Python', 'Machine Learning'],
@@ -31,7 +41,28 @@ export default function Projects({ isDark }) {
       icon: '🔒',
       github: 'https://github.com/Divya9720',
       live: '#'
-    }
+    },
+    {
+      id: 5,
+      title: 'Clothzy Website',
+      desc: 'E-commerce fashion website showcasing clothing collections. Built with responsive design for seamless shopping experience across all devices. Features product listings, filtering, and modern UI/UX.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      image: 'bg-gradient-to-br from-pink-400 to-purple-500',
+      icon: '👗',
+      github: 'https://github.com/Divya9720',
+      live: 'https://cloth-zy.vercel.app/products.html'
+    },
+    {
+      id: 6,
+      title: 'Restaurant Menu',
+      desc: 'Interactive restaurant menu website with food categories and detailed descriptions. Responsive design optimized for mobile ordering and browsing. Built with modern web technologies.',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+      image: 'bg-gradient-to-br from-orange-400 to-red-500',
+      icon: '🍽️',
+      github: 'https://github.com/Divya9720',
+      live: 'https://restaurant-menu-lime.vercel.app/'
+    },
+   
   ]
 
   return (
